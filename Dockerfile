@@ -1,7 +1,7 @@
 FROM debian:bookworm-slim
 
 RUN apt-get update && \
-    apt-get install -y curl git lsb-release python3 sudo && \
+    apt-get install -y curl git lsb-release python3 sudo procps && \
     apt-get clean
 
 WORKDIR /workspace/
