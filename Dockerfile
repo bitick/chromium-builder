@@ -12,7 +12,7 @@ ENV PATH /workspace/depot_tools:$PATH
 
 RUN fetch --nohooks chromium
 
-RUN /workspace/depot_tools/src/build/install-build-deps.sh
+RUN /workspace/src/build/install-build-deps.sh
 
 WORKDIR /workspace/src/
 
